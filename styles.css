@@ -287,3 +287,27 @@ footer {
     scroll-behavior: auto;
   }
 }
+
+.lang-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  justify-content: flex-end;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6px 20px 0;
+  font-size: 0.85rem;
+}
+
+.lang-switch a {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.lang-switch a[aria-current="true"] {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration: underline;
+}
